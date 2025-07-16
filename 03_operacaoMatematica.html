@@ -13,19 +13,20 @@
     let numero1 = parseInt(prompt(`Informe um numero`));
     let numero2 = parseInt(prompt(`Informe outro numero`));
     let operacao = prompt(`Informe qual operacao deseja fazer: ("+"mais, "-"menos, "*"multiplicacao, "/"divisao).`);
-    let mais = numero1 + numero2;
-    let menos = numero2 - numero2;
-    let multiplicacao = numero1 * numero2;
-    let divisao = numero1 / numero2;
-    let parImpar = ;
-    let positivonegativo = ;
-    let inteiroDecimal =;
     let resultado;
+    let paridade;
 
     //PROCESSAMENTO
-    switch (resultado) {
+    switch (numero1){
         case operacao = "+":
-            alert(``);
+            resultado = numero1 + numero2;
+            if (resultado % 2 === `0`){
+                paridade = `O número é par!`;
+            }
+            else{
+                paridade = `O número é ímpar!`;
+            }
+            alert(`O resultado da operação `+` é ${resultado} o número é ${paridade}!`);
     }
     
     //SAÍDA
