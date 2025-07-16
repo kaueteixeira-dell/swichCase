@@ -12,21 +12,11 @@
     */
 
   //ENTRADA
-  let telefone = prompt(
-    `Telefonou para a vitima? Inforem com S-Sim, N-Nao`
-  ).toLowerCase();
-  let local = prompt(
-    `Esteve no local do crime? Inforem com S-Sim, N-Nao`
-  ).toLowerCase();
-  let moradia = prompt(
-    `Mora perto da vitima? Inforem com S-Sim, N-Nao`
-  ).toLowerCase();
-  let deve = prompt(
-    `Devia para a vitima? Inforem com S-Sim, N-Nao`
-  ).toLowerCase();
-  let trabalhou = prompt(
-    `Ja trabalhou com a vitima? Inforem com S-Sim, N-Nao`
-  ).toLowerCase();
+  let telefone = prompt(`Telefonou para a vitima? Inforem com S-Sim, N-Nao`).toUpperCase();
+  let local = prompt(`Esteve no local do crime? Inforem com S-Sim, N-Nao`).toUpperCase();
+  let moradia = prompt(`Mora perto da vitima? Inforem com S-Sim, N-Nao`).toUpperCase();
+  let deve = prompt(`Devia para a vitima? Inforem com S-Sim, N-Nao`).toUpperCase();
+  let trabalhou = prompt(`Ja trabalhou com a vitima? Inforem com S-Sim, N-Nao`).toUpperCase();
 
   //PROCESSAMENTO
   let contador = 0;

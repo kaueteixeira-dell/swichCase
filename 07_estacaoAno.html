@@ -7,10 +7,28 @@
     */
 
     //ENTRADA
-
+    let hemisferio = prompt(`Informe em qual hemisferio esta N-Norte, S-Sul`);
+    let mes = prompt(`Informe em qual mes esta 1-Janeiro, 2-Fevereiro, 3-Marco, 4-Abril, 5-maio, 6-Junho, 7-Julho, 8-Agosto, 9-Setembro, 10-Outubro, 11-Novembro, 12-Dezembro`);
     
     //PROCESSAMENTO
+    
 
+    switch (hemisferio) {
+        case `N`: 
+        switch (mes) {
+            case 12:
+            case 1: 
+            case 2:
+            case 3:  
+            alert(`A estação do ano no hemisferio norte é Inverno`);
+            break;
+            case 4: 
+            case 5: 
+            case 6: 
+            alert(`A estação do ano no hemisferio norte é a Primavera`);
+        }
+
+    }
 
     //SAÍDA
 

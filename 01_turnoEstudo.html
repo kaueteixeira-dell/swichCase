@@ -13,12 +13,12 @@
     */
 
     //ENTRADA
-    let turno = prompt(`Informe em que turno voce estuda (D-Dia, T-Tarde, N-Noite)`);
+    let turno = prompt(`Informe em que turno voce estuda (M-Matutino, V-Vespertino, N-Noturno)`).toUpperCase().trim();
     switch (turno) {
-        case "D":
+        case "M":
         alert(`Bom dia!`);
             break;
-        case "T":
+        case "V":
         alert(`Boa tarde!`);
             break; 
         case "N":
@@ -30,6 +30,6 @@
     }
     //PROCESSAMENTO
 
-    
+        
     //SAÍDA
     </script>
