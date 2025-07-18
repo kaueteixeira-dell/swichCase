@@ -25,7 +25,7 @@
             conta = numero1 + numero2;
             switch (true) {
                
-                case Number.isInteger(conta) && conta % 2 === 0 || Number.isInteger(conta) && conta % -2 === 0: 
+                case Number.isInteger(conta) && conta % 2 === 0: 
                 paridade = `Par!`;
                 break;
 
@@ -40,11 +40,11 @@
 
             //INTEIRO E DECIMAL
             switch (true) {
-                case Number.isInteger(conta) == true: 
+                case Number.isInteger(conta): 
                 inteiroDec = `Inteiro`;
                 break;
 
-                case (Number.isInteger(conta) == false): 
+                case Number.isInteger(conta): 
                 inteiroDec = `Decimal`;
                 break;
             }
@@ -58,8 +58,11 @@
                 case (conta > 0): 
                 positivoNeg = `Positivo`;
                 break; 
+
+                case (conta === 0): 
+                positivoNeg = `Neutro`;
+                break;
             }
-            alert(`O resultado dos números ${numero1} e ${numero2} com a operção ${operacao} é ${conta} e ele é ${paridade}, e ${inteiroDec}, e ${positivoNeg}! `);
         break;
 
 
@@ -69,7 +72,7 @@
             switch (true) {
 
                 //PAR E ÍMPAR
-                case Number.isInteger(conta) && conta % 2 === 0 || Number.isInteger(conta) && conta % -2 === 0: 
+                case Number.isInteger(conta) && conta % 2 === 0: 
                 paridade = `Par!`;
                 break;
 
@@ -83,11 +86,11 @@
 
             //INTEIRO E DECIMAL
             switch (true) {
-                case Number.isInteger(conta) == true: 
+                case Number.isInteger(conta): 
                 inteiroDec = `Inteiro`;
                 break;
 
-                case (Number.isInteger(conta) == false): 
+                case Number.isInteger(conta): 
                 inteiroDec = `Decimal`;
                 break;
             }
@@ -101,8 +104,11 @@
                 case (conta > 0): 
                 positivoNeg = `Positivo`;
                 break; 
+
+                case (conta === 0): 
+                positivoNeg = `Neutro`;
+                break;
             }
-            alert(`O resultado dos números ${numero1} e ${numero2} com a operção ${operacao} é ${conta} e ele é ${paridade}, e ${inteiroDec}, e ${positivoNeg}! `);
         break;
 
 
@@ -112,7 +118,7 @@
             switch (true) {
 
                 //PAR E ÍMPAR
-                case Number.isInteger(conta) && conta % 2 === 0 || Number.isInteger(conta) && conta % -2 === 0: 
+                case Number.isInteger(conta) && conta % 2 === 0: 
                 paridade = `Par!`;
                 break;
 
@@ -127,11 +133,11 @@
             //POSITIVO E NEGATIVO
             //INTEIRO E DECIMAL
             switch (true) {
-                case Number.isInteger(conta) === true: 
+                case Number.isInteger(conta): 
                 inteiroDec = `Inteiro`;
                 break;
 
-                case (Number.isInteger(conta) === false): 
+                case Number.isInteger(conta): 
                 inteiroDec = `Decimal`;
                 break;
             }
@@ -144,12 +150,11 @@
                 case (conta > 0): 
                 positivoNeg = `Positivo`;
                 break;
-                
-                default: 
-                alert(`Inválido!`);
+
+                case (conta === 0): 
+                positivoNeg = `Neutro`;
                 break;
             }
-            alert(`O resultado dos números ${numero1} e ${numero2} com a operção ${operacao} é ${conta} e ele é ${paridade}, e ${inteiroDec}, e ${positivoNeg}! `);
         break;
 
 
@@ -159,7 +164,7 @@
             switch (true) {
 
                 //PAR E ÍMPAR
-                case Number.isInteger(conta) && conta % 2 === 0 || Number.isInteger(conta) && conta % -2 === 0: 
+                case Number.isInteger(conta) && conta % 2 === 0: 
                 paridade = `Par!`;
                 break;
 
@@ -172,12 +177,12 @@
             }
 
             switch (true) {
-                case Number.isInteger(conta) == true: 
+                case Number.isInteger(conta): 
                 inteiroDec = `Inteiro`;
                 break;
 
                 //INTEIRO E DECIMAL
-                case (Number.isInteger(conta) == false): 
+                case Number.isInteger(conta): 
                 inteiroDec = `Decimal`;
                 break;
 
@@ -196,18 +201,14 @@
                 positivoNeg = `Positivo`;
                 break; 
 
-                default: 
-                alert(`Inválido!`);
+                case (conta === 0): 
+                positivoNeg = `Neutro`;
                 break;
             }
-            alert(`O resultado dos números ${numero1} e ${numero2} com a operção "${operacao}" é ${conta} e ele é ${paridade}, e ${inteiroDec}, e ${positivoNeg}! `);
-        break;
-
-        default: 
-        alert(`Inválido!`);
         break;
     }
     
     //SAÍDA
+    alert(`O resultado da operção "${operacao}" dos números ${numero1} e ${numero2} é ${conta} e ele é ${paridade}, e ${inteiroDec}, e ${positivoNeg}! `)
 
 </script>   
