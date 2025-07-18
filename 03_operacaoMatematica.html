@@ -39,12 +39,12 @@
             }
 
             //INTEIRO E DECIMAL
-            switch (true) {
-                case Number.isInteger(conta): 
+            switch (Number.isInteger(conta)) {
+                case true: 
                 inteiroDec = `Inteiro`;
                 break;
 
-                case Number.isInteger(conta): 
+                case false: 
                 inteiroDec = `Decimal`;
                 break;
             }
@@ -85,12 +85,12 @@
             }
 
             //INTEIRO E DECIMAL
-            switch (true) {
-                case Number.isInteger(conta): 
+            switch (Number.isInteger(conta)) {
+                case true: 
                 inteiroDec = `Inteiro`;
                 break;
 
-                case Number.isInteger(conta): 
+                case false: 
                 inteiroDec = `Decimal`;
                 break;
             }
@@ -132,12 +132,12 @@
 
             //POSITIVO E NEGATIVO
             //INTEIRO E DECIMAL
-            switch (true) {
-                case Number.isInteger(conta): 
+            switch (Number.isInteger(conta)) {
+                case true: 
                 inteiroDec = `Inteiro`;
                 break;
 
-                case Number.isInteger(conta): 
+                case false: 
                 inteiroDec = `Decimal`;
                 break;
             }
@@ -176,13 +176,13 @@
                 break;
             }
 
-            switch (true) {
-                case Number.isInteger(conta): 
+            switch (Number.isInteger(conta)) {
+                case true: 
                 inteiroDec = `Inteiro`;
                 break;
 
                 //INTEIRO E DECIMAL
-                case Number.isInteger(conta): 
+                case false: 
                 inteiroDec = `Decimal`;
                 break;
 
