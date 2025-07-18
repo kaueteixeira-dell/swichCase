@@ -7,8 +7,8 @@
     */
 
     //ENTRADA
-    let hemisferio = prompt(`Informe em qual hemisferio esta N-Norte, S-Sul`);
-    let mes = prompt(`Informe em qual mes esta 1-Janeiro, 2-Fevereiro, 3-Marco, 4-Abril, 5-maio, 6-Junho, 7-Julho, 8-Agosto, 9-Setembro, 10-Outubro, 11-Novembro, 12-Dezembro`);
+    let hemisferio = prompt(`Informe em qual hemisferio esta N-Norte, S-Sul`).toUpperCase().trim();
+    let mes = parseInt(prompt(`Informe em qual mes esta 1-Janeiro, 2-Fevereiro, 3-Marco, 4-Abril, 5-maio, 6-Junho, 7-Julho, 8-Agosto, 9-Setembro, 10-Outubro, 11-Novembro, 12-Dezembro`));
     
     //PROCESSAMENTO
     
@@ -16,16 +16,63 @@
     switch (hemisferio) {
         case `N`: 
         switch (mes) {
-            case 12:
             case 1: 
             case 2:
             case 3:  
-            alert(`A estação do ano no hemisferio norte é Inverno`);
-            break;
+                 alert(`A estação do ano no hemisferio norte é Inverno!`);
+              break;
+
             case 4: 
             case 5: 
             case 6: 
-            alert(`A estação do ano no hemisferio norte é a Primavera`);
+                 alert(`A estação do ano no hemisferio norte é a Primavera!`);
+              break;
+
+            case 7: 
+            case 8: 
+            case 9:
+                alert(`A estação do ano no hemisferio norte é o Verão!`);
+              break;
+            
+            case 10: 
+            case 11:
+            case 12: 
+            alert(`A estação do ano no hemisferio norte é o Outono!`);
+              break;
+              default: 
+              alert(`Mês inválido!`);
+              break;
+        }
+
+    }
+     switch (hemisferio) {
+        case `S`: 
+        switch (mes) {
+            case 1: 
+            case 2:
+            case 3:  
+                 alert(`A estação do ano no hemisferio norte é Verão`);
+
+            case 4: 
+            case 5: 
+            case 6: 
+                 alert(`A estação do ano no hemisferio norte é a Outono!`);
+              break;
+
+            case 7: 
+            case 8: 
+            case 9:
+                alert(`A estação do ano no hemisferio norte é o Inverno!`);
+              break;
+            
+            case 10: 
+            case 11:
+            case 12: 
+            alert(`A estação do ano no hemisferio norte é o primavera!`);
+              break;
+               default: 
+              alert(`Mês inválido!`);
+              break;
         }
 
     }

@@ -10,7 +10,7 @@
     */
 
   // ENTRADA
-  let idade = parseInt(prompt(`Informe a idade de seu cao`)).toUpperCase();
+  let idade = parseInt(prompt(`Informe a idade de seu cao`).toUpperCase());
   let porte = prompt(`Informe o porte de seu cao P-Pequeno, M-Medio, G-Grande`).toUpperCase();
 
   // PROCESSAMENTO
@@ -19,15 +19,15 @@
   switch (porte) {
     case `P`:
       conta = idade * 5;
-      alert(`A idade de seu cão em anos de humanos é ${conta}`);
+      alert(`A idade de seu cão em anos humanos é de ${conta} anos!`);
       break;
     case `M`:
       conta = idade * 6;
-      alert(`A idade de seu cão em anos de humanos é ${conta}`);
+      alert(`A idade de seu cão em anos humanos é de ${conta} anos!`);
       break;
     case `G`:
       conta = idade * 7;
-      alert(`A idade de seu cão em anos de humanos é ${conta}`);
+      alert(`A idade de seu cão em anos humanos é de ${conta} anos!`);
       break;
     default:
       alert(`Inválido!`);
